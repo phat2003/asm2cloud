@@ -6,6 +6,7 @@
 
 html,
 body {
+  background-color: yellow;
   padding: 2rem;
   font-family: tahoma;
 }
@@ -80,3 +81,82 @@ button {
   height: 220px;
   overflow-y: scroll;
 }
+.header-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: limegreen; /* Màu nền xanh lá cây */
+                padding: 10px; /* Khoảng cách viền */
+            }
+            
+            .shop-name {
+                color: white; /* Màu chữ trắng */
+                font-size: 24px;
+            }
+            
+            .content-container {
+                margin-top: 20px;
+            }
+
+
+
+
+
+
+
+            .header-container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: limegreen; /* Màu nền xanh lá cây */
+              padding: 10px; /* Khoảng cách viền */
+          }
+          
+          .shop-name {
+              color: white; /* Màu chữ trắng */
+              font-size: 24px;
+          }
+          
+          .content-container {
+              margin-top: 20px;
+          }
+
+          .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: limegreen;
+  padding: 10px;
+}
+
+.content-container {
+  min-height: calc(100vh - 60px); /* Kích thước tối thiểu cho nội dung trang */
+  padding-bottom: 60px; /* Khoảng cách dưới cùng của nội dung trang để nhường chỗ cho footer */
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: limegreen;
+  padding: 10px;
+}
+
+.footer-container .footer-text {
+  color: white;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+

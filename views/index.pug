@@ -1,8 +1,9 @@
 extends layout
 
 block content
-  div.title-book
-    h1 ATN Toy's    
+  div.header-container
+    span.shop-name ATN TOYS SHOP
+    
 
   //- Create books
   div.content_book
@@ -20,28 +21,9 @@ block content
       div  
        button(type="submit") Create
 
-  //- Read books
-  div.content_book   
-    h2 Read Product
-    div.list_books
-      each book in books
-        ul
-          li
-           span Toy's Name:&nbsp
-           =book.title
-          li
-           span Description:&nbsp
-           =book.description
-          li
-           span Price:&nbsp
-           =book.author
-          li
-           span ID:&nbsp
-           =book._id
-
   //- Update books        
   div.content_book 
-    h2 Update Product
+    h2 Update
     form(action="/update" method="POST")
       div
         label(for="id") ID
@@ -59,9 +41,32 @@ block content
 
   //- Delete books     
   div.content_book   
-    h2 Delete Product
+    h2 Delete
     form(action="/delete" method="POST")
       div
         label(for="id") ID
         input(type="text" name="id" required="required")
       button(type="submit") Delete
+
+  //- Read books
+  div.content_book   
+    h2 List product
+    div.list_books
+      each book in books
+        ul
+          li
+           span Toy's Name:&nbsp
+           =book.title
+          li
+           span Description:&nbsp
+           =book.description
+          li
+           span Price:&nbsp
+           =book.author
+          li
+           span ID:&nbsp
+           =book._id
+
+  
+
+  
