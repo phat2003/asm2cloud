@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Kết nối tới cơ sở dữ liệu MongoDB
-mongoose.connect('mongodb+srv://phat:123@cluster0.9xgkgjb.mongodb.net/27017/', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://phat:123@cluster0.9xgkgjb.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
   })
